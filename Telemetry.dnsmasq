@@ -1,0 +1,35 @@
+server=/.data.ea.com/
+server=/.online-metrix.net/
+# Google
+server=/.crashlytics.com/
+server=/.googleanalytics.com/
+server=/.google-analytics.com/
+server=/.googlegadgetmanager.com/
+server=/.urchin.com/
+# Facebook
+server=/.facebook.com/
+server=/.fbcdn.com/
+server=/.fbcdn.net/
+server=/.fbsbx.com/
+server=/.tfbnw.net/
+server=/.whatsapp.com/
+server=/.facebook-web-clients.appspot.com/
+server=/.connect.facebook.net.edgekey.net/
+server=/.fbcdn-profile-a.akamaihd.net/
+# Microsoft
+server=/.telemetry.microsoft.com/
+server=/vortex.data.microsoft.com/
+server=/telemetry.appex.bing.net/
+server=/telemetry.microsoft.com/
+server=/telemetry.remoteapp.windowsazure.com/
+server=/telemetry.urs.microsoft.com/
+server=/survey.watson.microsoft.com/
+server=/sqm.telemetry.microsoft.com.nsatc.net/
+server=/spynet2.microsoft.com/
+server=/spynetalt.microsoft.com/
+server=/spyneteurope.microsoft.akadns.net/
+server=/onecollector.cloudapp.aria.akadns.net/
+server=/pre.footprintpredict.com/
+server=/preview.msn.com/
+server=/rad.live.com/
+server=/rad.msn.com/
