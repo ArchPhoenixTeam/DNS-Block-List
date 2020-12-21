@@ -1,0 +1,36 @@
+#!/bin/sh
+# Contributors:
+# ArchPhoenix Team 2020-2021
+
+URLBase=https://raw.githubusercontent.com/ArchPhoenixTeam/DNS-Block-List/main/ # Set the base URL of your host, if multiple config files are hosted at the same place
+SourceTelemetry=Telemetry.dnsmasq # Set the URL used to retrieve your telemetry domain rules
+DestinationTelemetry= # Set the path to your telemetry domain rules config file
+SourceAdvertising=Advertising.dnsmasq # Set the URL used to retrieve your advertising domain rules
+DestinationAdvertising= # Set the path to your advertising domain rules config file
+SourceInternal= # Set the URL used to retrieve your internal domain rules, for example "https://dnsmaster.archphoenixteam/dnsmasq/lists/internal.dnsmasq"
+DestinationInternal= # Set the path to your internal domain rules config file
+ServicePID= # Enter your method of PID retrieval here if your service manager require this
+ServiceRestart= # Enter your service restarting method here, common methods on routers are "service restart_dnsmasq", "service restart dnsmasq", "systemctl restart dnsmasq"
+
+echo -e "---Telemetry---"
+[ -s "$DestinationTelemetry" ] && HTTPStatus=$(curl -s -o /dev/null -I -w "%{http_code}" "${URLBase}${SourceTelemetry}")
+echo -e "$HTTPStatus"
+[ "$HTTPStatus" -eq "200" ] && echo "Updating telemetry list"
+[ "$HTTPStatus" -eq "200" ] && curl -sk "${URLBase}${SourceTelemetry}" -o $DestinationTelemetry
+HTTPStatus="1"
+echo -e "---Advertising---"
+[ -s "$DestinationAdvertising" ] && HTTPStatus=$(curl -s -o /dev/null -I -w "%{http_code}" "${URLBase}${SourceAdvertising}")
+echo -e "$HTTPStatus"
+[ "$HTTPStatus" -eq "200" ] && echo "Updating advertising list"
+[ "$HTTPStatus" -eq "200" ] && curl -sk "${URLBase}${SourceAdvertising}" -o $DestinationAdvertising
+HTTPStatus="1"
+echo -e "---Internal---"
+[ -s "$DestinationInternal" ] && HTTPStatus=$(curl -s -o /dev/null -I -w "%{http_code}" "${URLBase}${SourceInternal}")
+echo -e "$HTTPStatus"
+[ "$HTTPStatus" -eq "200" ] && echo "Updating internal list"
+[ "$HTTPStatus" -eq "200" ] && curl -sk "${URLBase}${SourceInternal}" -o $DestinationInternal
+
+$ServiceRestart
+
+logger -t dnsmasq DNS block list updated
+echo -e "End of script"
