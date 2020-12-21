@@ -1,8 +1,101 @@
-server=/.data.ea.com/
 server=/.online-metrix.net/
 server=/perimeterx.net/
 server=/everesttech.net/
 server=/marfeel.com/
+server=/api.redshell.io/
+# HubSpot
+server=/hs-analytics.net/
+server=/hs-scripts.com/
+server=/hscollectedforms.net/
+server=/hsforms.net/
+server=/hubapi.com/
+server=/hubspot.com/
+server=/hubspot.net/
+server=/hubspotemail.net/
+## Games
+server=/balancer.devtodev.com/
+server=/eqlauncher.com/
+server=/gameserver.capeguy.co.uk/
+server=/gameguide3.aspyr.com/
+server=/brink.hydra.agoragames.com/
+server=/www.santaragione.com/
+server=/web.amanita-design.net/
+server=/www.uselumos.com/
+server=/patch.fatsharkgames.com/
+server=/patch.fatshark.se/
+server=/ftp.fatshark.se/
+server=/backup01.i.fatshark.se/
+server=/cdn.fatsharkgames.se/
+server=/cognito-identity.us-west-2.amazonaws.com/
+server=/stats.drycactus.com/
+server=/samogon-stats.joybits.org/
+server=/hff.terahard.org/
+server=/abfdpe30ti.execute-api.us-west-2.amazonaws.com/
+server=/p.line.dev.2kgames.com/
+server=/castlesteam.castlecrashers.com/
+server=/bbtsteam.battleblocktheater.com/
+server=/dfw-gobbler.doom.amok.systems/
+server=/discovery.analytics.zion.idtech.services/
+server=/zat-content.rebellion.co.uk/
+# EA
+server=/data.ea.com/
+# Valve
+server=/crash.steampowered.com/
+# Unity
+server=/stats.unity3d.com/
+server=/public.cloud.unity3d.com/
+server=/api.uca.cloud.unity3d.com/
+server=/config.uca.cloud.unity3d.com/
+server=/perf-events.cloud.unity3d.com/
+server=/data-optout-service.uca.cloud.unity3d.com/
+# Epic Games
+server=/tracking.epicgames.com/
+server=/static-assets-prod.epicgames.com/
+server=/et.epicgames.com/
+server=/et2.epicgames.com/
+server=/udn.epicgames.com/
+server=/etsource.epicgames.com/
+server=/metrics.ol.epicgames.com/
+server=/datarouter.ol.epicgames.com/
+# Ubisoft
+server=/gconnect.ubi.com/
+server=/onlineconfigservice.ubi.com/
+# Sega
+server=/garry.sgaas.net/
+# Rockstar Games
+telemetry.ros.rockstargames.com
+## Communication
+# Teamspeak
+server=/la.teamspeak.com/
+server=/install.overwolf.com/
+server=/news.teamspeak.com/
+server=/statistics.teamspeak.com/
+server=/blacklist2.teamspeak.com/
+server=/ts3services.teamspeak.com/
+server=/badges-content.teamspeak.com/
+server=/clientapi.myteamspeak.com
+# Snapchat
+server=/addlive.io/
+server=/feelinsonice-hrd.appspot.com/
+server=/feelinsonice.appspot.com/
+server=/feelinsonice.com/
+server=/sc-analytics.appspot.com/
+server=/sc-cdn.net/
+server=/sc-corp.net/
+server=/sc-gw.com/
+server=/sc-jpl.com/
+server=/sc-prod.net/
+server=/sc-static.net/
+server=/snap-dev.net/
+server=/snapads.com/
+server=/snapchat.com/
+server=/snapkit.com/
+## GAFAM
+# nVidia
+server=/telemetry.nvidia.com/
+server=/events.gfe.nvidia.com/
+server=/services.gfe.nvidia.com/
+server=/activation.gfe.nvidia.com/
 # Google
 server=/.crashlytics.com/
 server=/.googleanalytics.com/
