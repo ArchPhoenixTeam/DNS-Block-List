@@ -1,5 +1,8 @@
 server=/.data.ea.com/
 server=/.online-metrix.net/
+server=/perimeterx.net/
+server=/everesttech.net/
+server=/marfeel.com/
 # Google
 server=/.crashlytics.com/
 server=/.googleanalytics.com/
