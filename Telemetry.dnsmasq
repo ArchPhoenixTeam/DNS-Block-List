@@ -63,7 +63,7 @@ server=/onlineconfigservice.ubi.com/
 # Sega
 server=/garry.sgaas.net/
 # Rockstar Games
-telemetry.ros.rockstargames.com
+server=/telemetry.ros.rockstargames.com/
 ## Communication
 # Teamspeak
 server=/la.teamspeak.com/
