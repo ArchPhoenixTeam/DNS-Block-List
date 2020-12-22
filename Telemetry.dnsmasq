@@ -73,7 +73,7 @@ server=/statistics.teamspeak.com/
 server=/blacklist2.teamspeak.com/
 server=/ts3services.teamspeak.com/
 server=/badges-content.teamspeak.com/
-server=/clientapi.myteamspeak.com
+server=/clientapi.myteamspeak.com/
 # Snapchat
 server=/addlive.io/
 server=/feelinsonice-hrd.appspot.com/
