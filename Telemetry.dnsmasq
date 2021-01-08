@@ -37,6 +37,8 @@ server=/bbtsteam.battleblocktheater.com/
 server=/dfw-gobbler.doom.amok.systems/
 server=/discovery.analytics.zion.idtech.services/
 server=/zat-content.rebellion.co.uk/
+# Blizzard
+server=/telemetry-in.battle.net/
 # EA
 server=/data.ea.com/
 # Valve
