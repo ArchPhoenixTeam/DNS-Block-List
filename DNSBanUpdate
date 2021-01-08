@@ -12,6 +12,8 @@ DestinationInternal= # Set the path to your internal domain rules config file
 ServicePID= # Enter your method of PID retrieval here if your service manager require this
 ServiceRestart= # Enter your service restarting method here, common methods on routers are "service restart_dnsmasq", "service restart dnsmasq", "systemctl restart dnsmasq"
 
+logger -t dnsmasq DNS block list update script started
+
 echo -e "---Telemetry---"
 [ -s "$DestinationTelemetry" ] && HTTPStatus=$(curl -s -o /dev/null -I -w "%{http_code}" "${URLBase}${SourceTelemetry}")
 echo -e "$HTTPStatus"
